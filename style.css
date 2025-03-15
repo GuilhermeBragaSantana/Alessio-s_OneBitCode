@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --color-nav: #232323;
+  --color-button: #ffa500;
+  --color-p: #eaeaea;
+}
+
+nav {
+  width: 100%;
+  padding: 0.6rem;
+  text-align: center;
+  background-color: var(--color-nav);
+  color: #fff;
+}
+
+nav li {
+  display: inline;
+  margin-left: 4rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > h1 {
+  font-size: 2rem;
+}
+
+.hero > h1,
+.hero > p {
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.background__image {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+button {
+  font-weight: 700;
+  padding: 0.5rem;
+  width: auto;
+  border-radius: 0.25rem;
+  border: transparent;
+  background-color: var(--color-button);
+}
+
+.menu {
+  margin: 2.5rem auto;
+}
+
+.menu > h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.pizza {
+  margin: 0.5rem;
+  height: 18rem;
+  width: 20rem;
+  background-color: var(--color-p);
+  border-radius: 0.5rem;
+}
+
+.pizza > img {
+  width: 20rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.pizza > h3,
+.pizza > p {
+  width: 15rem;
+  margin: 0.5rem 1rem;
+  font-size: 10px;
+}
+
+.row_menu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about_us {
+  position: relative;
+}
+
+.about_us_background {
+  height: 7rem;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -10;
+  box-shadow: 0 1rem 2rem -0.5rem rgba(20, 116, 180, 0.25);
+}
+
+.about_us > h2 {
+  padding-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about_us > h2,
+.about_us > p {
+  text-align: center;
+  color: #fff;
+}
+
+.about_us > p {
+  font-size: 10px;
+}
+
+.contact {
+  margin: 5rem;
+}
+
+.contact > h2,
+.contact > p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact_item,
+.contact > p {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.column_1 {
+  width: 15rem;
+}
+
+.column_2 {
+  width: 10rem;
+}
+
+.column_3 {
+  width: 20rem;
+}
+
+.text_strong {
+  font-weight: 600;
+}
+
+span > a {
+  color: var(--color-button);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact > button {
+  display: block;
+  margin: 2rem auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--color-nav);
+  color: var(--color-button);
+  font-size: 10px;
+}
